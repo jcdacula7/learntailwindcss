@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="./output.css" />
     <style>
       * {
-        /* box-sizing: border-box; */
-        /* border: solid salmon 1px; */
+        /* margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: solid salmon 1px; */
       }
     </style>
   </head>
   <body>
-    <div class="py-20 min-h-screen bg-gray-200">
-      <!-- container -->
-      <div class="container mx-auto">
-        <div class="relative bg-white p-10 rounded-lg shadow-lg">
-          <!-- absolutely positioned label -->
-          <div
-            class="absolute top-0 right-0 bg-red-500 text-red-100 py-2 px-4 text-xs rounded transform translate-x-2 -translate-y-2"
-          >
-            Brand New
-          </div>
+    <div class="p-4 lg:p-20 bg-gray-500 min-h-screen text-center">
+      <h1
+        class="text-6xl text-black sm:text-red-300 md:text-yellow-200 lg:text-green-400 xl:text-white border border-red-900 rounded pb-2"
+      >
+        Mobile First
+      </h1>
 
-          <!-- content -->
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quas
-            rerum harum repellat voluptatem vero a inventore! Illo fuga dicta
-            labore illum, ipsam sapiente quibusdam vitae tenetur, hic facilis
-            soluta?
-          </p>
-        </div>
+      <h2
+        class="text-3xl sm:text-4xl sm:text-red-300 md:text-5xl md:text-yellow-200 lg:text-6xl lg:text-green-400"
+      >
+        Different Sizes Per Device
+      </h2>
+
+      <!-- stacking vs side-by-side -->
+      <div class="md:flex md:space-x-8 space-y-10 md:space-y-0 mt-10">
+        <div class="md:w-1/2 p-10 bg-white">on mobile, we stack</div>
+        <div class="md:w-1/2 p-10 bg-white">on desktop, we side-by-side</div>
       </div>
     </div>
   </body>
