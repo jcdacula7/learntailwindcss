@@ -6,38 +6,49 @@
     <title>TailwindCSS with GIT</title>
     <link rel="stylesheet" href="./output.css" />
     <style>
-      /* * {
-        margin: 0;
+      * {
+        /* margin: 0;
         padding: 0;
         box-sizing: border-box;
-        border: solid salmon 1px;
-      } */
+        border: solid salmon 1px; */
+      }
     </style>
   </head>
   <body>
-    <!-- centering -->
-    <div class="bg-green-700 h-64 flex justify-center items-center">
-      <h2 class="text-4xl text-green-100">Center</h2>
+    <div class="p-20 bg-green-700 text-green-800 grid grid-cols-3 gap-2">
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 1</div>
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 2</div>
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 3</div>
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 4</div>
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 5</div>
+      <div class="p-2 bg-green-200 text-green-800 rounded">card 6</div>
     </div>
 
-    <!-- navigation -->
-    <div class="bg-gray-500 p-10 flex justify-between">
-      <div>logo</div>
-      <div>navigation</div>
+    <div class="p-20 bg-teal-200 text-black grid grid-cols-3 grid-rows-3 gap-3">
+      <div class="p-2 bg-gray-400 rounded">card 1</div>
+      <div class="p-2 bg-gray-400 rounded row-span-2">card 2</div>
+      <div class="p-2 bg-gray-400 rounded">card 3</div>
+      <div class="p-2 bg-gray-400 rounded row-span-2">card 4</div>
+      <div class="p-2 bg-gray-400 rounded row-span-2">card 5</div>
+      <div class="p-2 bg-gray-400 rounded">card 6</div>
     </div>
 
-    <!-- creating columns section -->
-    <div class="bg-yellow-500 p-10 md:flex md:space-x-8 space-y-4 md:space-y-0">
-      <div class="bg-white p-2 flex-grow">hello</div>
-      <div class="bg-white p-2 flex-grow">hello</div>
-      <div class="bg-white p-2 flex-grow">hello</div>
-    </div>
-
-    <!-- sidebar -->
-    <div class="bg-teal-700 h-64">
-      <div class="md:flex h-full items-stretch p-5">
-        <div class="md:w-1/5 bg-orange-500 p-10 text-center">sidebar</div>
-        <div class="md:flex-grow bg-teal-500 p-10 text-center">content</div>
+    <div
+      class="p-20 bg-orange-200 text-orange-800 grid grid-cols-4 grid-rows-3 gap-3"
+    >
+      <div
+        class="rounded p-5 bg-orange-100 row-span-3 flex items-center justify-center"
+      >
+        image
+      </div>
+      <div
+        class="rounded p-5 bg-orange-100 col-start-2 col-end-4 row-start-1 row-end-3 flex items-center justify-center"
+      >
+        content
+      </div>
+      <div class="rounded p-5 bg-orange-100">something</div>
+      <div class="rounded p-5 bg-orange-100 row-start-3 col-start-2 col-span-3">
+        footer
       </div>
     </div>
   </body>
