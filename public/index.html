@@ -6,32 +6,38 @@
     <title>TailwindCSS with GIT</title>
     <link rel="stylesheet" href="./output.css" />
     <style>
-      * {
-        /* margin: 0;
+      /* * {
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
-        border: solid salmon 1px; */
-      }
+        border: solid salmon 1px;
+      } */
     </style>
   </head>
   <body>
-    <div class="p-4 lg:p-20 bg-gray-500 min-h-screen text-center">
-      <h1
-        class="text-6xl text-black sm:text-red-300 md:text-yellow-200 lg:text-green-400 xl:text-white border border-red-900 rounded pb-2"
-      >
-        Mobile First
-      </h1>
+    <!-- centering -->
+    <div class="bg-green-700 h-64 flex justify-center items-center">
+      <h2 class="text-4xl text-green-100">Center</h2>
+    </div>
 
-      <h2
-        class="text-3xl sm:text-4xl sm:text-red-300 md:text-5xl md:text-yellow-200 lg:text-6xl lg:text-green-400"
-      >
-        Different Sizes Per Device
-      </h2>
+    <!-- navigation -->
+    <div class="bg-gray-500 p-10 flex justify-between">
+      <div>logo</div>
+      <div>navigation</div>
+    </div>
 
-      <!-- stacking vs side-by-side -->
-      <div class="md:flex md:space-x-8 space-y-10 md:space-y-0 mt-10">
-        <div class="md:w-1/2 p-10 bg-white">on mobile, we stack</div>
-        <div class="md:w-1/2 p-10 bg-white">on desktop, we side-by-side</div>
+    <!-- creating columns section -->
+    <div class="bg-yellow-500 p-10 md:flex md:space-x-8 space-y-4 md:space-y-0">
+      <div class="bg-white p-2 flex-grow">hello</div>
+      <div class="bg-white p-2 flex-grow">hello</div>
+      <div class="bg-white p-2 flex-grow">hello</div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="bg-teal-700 h-64">
+      <div class="md:flex h-full items-stretch p-5">
+        <div class="md:w-1/5 bg-orange-500 p-10 text-center">sidebar</div>
+        <div class="md:flex-grow bg-teal-500 p-10 text-center">content</div>
       </div>
     </div>
   </body>

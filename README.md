@@ -10,4 +10,5 @@ lesson_colors - learn color classes \
 lesson_pseudo - learn pseudo, transition, transform and animation classes \
 lesson_gradients - learn gradients \
 lesson_container - learn container class, relative and absolute positioning class \
-lesson_responsive - learn responsive classes
+lesson_responsive - learn responsive classes \
+lesson_flexbox - learn flexbox with responsiveness
