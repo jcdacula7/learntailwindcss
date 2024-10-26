@@ -1,3 +1,4 @@
 # learntailwindcss
 
-welcome!
+welcome! \
+lesson intro - introduction to tailwind classes
