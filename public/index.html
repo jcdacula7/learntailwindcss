@@ -7,48 +7,69 @@
     <link rel="stylesheet" href="./output.css" />
     <style>
       * {
-        /* margin: 0;
+        margin: 0;
         padding: 0;
         box-sizing: border-box;
-        border: solid salmon 1px; */
+        /* border: solid salmon 1px; */
       }
     </style>
   </head>
   <body>
-    <div class="p-20 bg-green-700 text-green-800 grid grid-cols-3 gap-2">
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 1</div>
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 2</div>
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 3</div>
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 4</div>
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 5</div>
-      <div class="p-2 bg-green-200 text-green-800 rounded">card 6</div>
+    <!-- card with no image -->
+    <div class="p-20 bg-blue-400">
+      <h3 class="text-blue-100 mb-4 text-sm font-bold">
+        1. Card with no image
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="font-bold mb-2 text-2xl text-gray-900">Card with Image</h2>
+        <p class="text-gray-800">This is my cool new card!</p>
+      </div>
     </div>
 
-    <div class="p-20 bg-teal-200 text-black grid grid-cols-3 grid-rows-3 gap-3">
-      <div class="p-2 bg-gray-400 rounded">card 1</div>
-      <div class="p-2 bg-gray-400 rounded row-span-2">card 2</div>
-      <div class="p-2 bg-gray-400 rounded">card 3</div>
-      <div class="p-2 bg-gray-400 rounded row-span-2">card 4</div>
-      <div class="p-2 bg-gray-400 rounded row-span-2">card 5</div>
-      <div class="p-2 bg-gray-400 rounded">card 6</div>
+    <!-- card with an image -->
+    <div class="p-20 bg-purple-400">
+      <h3 class="text-purple-100 mb-4 text-sm font-bold">
+        2. Card with an image
+      </h3>
+      <div class="bg-white rounded-lg shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1497598315776-c2e30b55e4c5"
+          alt="dessert deer"
+          class="rounded-t-lg"
+        />
+
+        <div class="p-4">
+          <h2 class="font-bold mb-2 text-2xl text-purple-800">
+            Card with an Image
+          </h2>
+          <p class="text-gray-700 mb-2">This is a little bit better card</p>
+          <a
+            href="#"
+            class="text-purple-700 hover:underline hover:text-purple-500 text-sm"
+            >Read More 👉</a
+          >
+        </div>
+      </div>
     </div>
 
-    <div
-      class="p-20 bg-orange-200 text-orange-800 grid grid-cols-4 grid-rows-3 gap-3"
-    >
-      <div
-        class="rounded p-5 bg-orange-100 row-span-3 flex items-center justify-center"
-      >
-        image
-      </div>
-      <div
-        class="rounded p-5 bg-orange-100 col-start-2 col-end-4 row-start-1 row-end-3 flex items-center justify-center"
-      >
-        content
-      </div>
-      <div class="rounded p-5 bg-orange-100">something</div>
-      <div class="rounded p-5 bg-orange-100 row-start-3 col-start-2 col-span-3">
-        footer
+    <!-- horizontal card -->
+    <div class="p-20 bg-orange-200">
+      <h3 class="text-orange-600 mb-4 text-sm font-bold">3. Horizontal Card</h3>
+
+      <div class="bg-white rounded-lg shadow-lg sm:flex sm:items-center">
+        <img
+          class="sm:w-1/2 sm:rounded-l sm:rounded-tr-none rounded-t"
+          src="https://images.unsplash.com/photo-1417577097439-425fb7dec05e"
+          alt="night sky"
+        />
+        <div class="p-4 text-orange-700">
+          <h2
+            class="font-bold text-2xl mb-2 text-orange-800 md:text-3xl lg:text-4xl"
+          >
+            Horizontal Card
+          </h2>
+          <p>Look at me go sideways!</p>
+        </div>
       </div>
     </div>
   </body>
