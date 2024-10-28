@@ -16,4 +16,5 @@ lesson_grid - learn grid \
 lesson_card - learn card with responsiveness \
 lesson_buttons - learn button classess \
 lesson_form - create minimal form \
-lesson_form_2 - create minimal form 2
+lesson_form_2 - create minimal form 2 \
+lesson_form_3 - create colorful form
