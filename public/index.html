@@ -15,74 +15,49 @@
     </style>
   </head>
   <body>
-    <!-- buttons -->
-    <div class="p-32 bg-blue-800 flex justify-center space-x-6">
-      <a
-        href="#"
-        class="bg-red-500 hover:bg-red-400 py-3 px-8 rounded text-red-100 transition duration-300"
-        >Learn More</a
+    <!-- minimal form -->
+    <div class="min-h-screen bg-blue-200 py-32 px-10">
+      <div
+        class="bg-white p-10 rounded-lg shadow-lg w-full md:w-3/4 lg:w-1/2 mx-auto"
       >
-      <a
-        href="#"
-        class="bg-orange-500 hover:bg-orange-400 text-orange-100 py-3 px-12 rounded-full transition duration-500"
-        >Login</a
-      >
-      <a
-        href="#"
-        class="bg-yellow-500 hover:bg-yellow-400 text-yellow-100 py-3 px-10 rounded-lg transition duration-700 border-b-4 border-yellow-700 hover:border-yellow-800"
-        >Signup</a
-      >
-    </div>
+        <form action="">
+          <div class="mb-5">
+            <label for="name" class="block mb-2 font-bold text-gray-500"
+              >name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="fullname"
+              class="border border-gray-300 shadow p-3 w-full rounded"
+            />
+          </div>
 
-    <!-- outline and shadowed -->
-    <div class="p-32 bg-teal-500 text-xl flex justify-center space-x-8">
-      <a
-        href="#"
-        class="py-2 px-8 text-teal-800 hover:text-teal-900 border border-teal-800 hover:border-teal-700 transition duration-300 font-bold"
-        >Do It</a
-      >
-      <a
-        href="#"
-        class="py-2 px-8 rounded-full bg-teal-100 hover:bg-white text-teal-800 hover:text-teal-900 font-bold shadow-m hover:shadow-lg transition duration-500"
-        >Do NOT It</a
-      >
-    </div>
+          <div class="mb-10">
+            <label for="twitter" class="block mb-2 font-bold text-gray-500"
+              >twitter</label
+            >
+            <input
+              type="text"
+              name="twitter"
+              id="twitter"
+              placeholder="twitter"
+              class="border border-red-400 shadow p-3 w-full rounded"
+            />
+            <p class="text-sm text-red-400 mt-2">
+              Twitter username is required
+            </p>
+          </div>
 
-    <!-- group and button with icon -->
-    <div class="p-32 bg-purple-800 flex justify-center space-x-8">
-      <div class="flex bg-purple-600 text-xl text-center">
-        <a
-          href="#"
-          class="text-purple-200 hover:bg-purple-700 py-2 w-16 rounded-l flex justify-center items-center"
-          >👈</a
-        >
-        <a
-          href="#"
-          class="text-purple-200 hover:bg-purple-700 py-2 w-16 flex justify-center items-center"
-          >1</a
-        >
-        <a
-          href="#"
-          class="text-purple-200 hover:bg-purple-700 py-2 w-16 flex justify-center items-center"
-          >2</a
-        >
-        <a
-          href="#"
-          class="text-purple-200 hover:bg-purple-700 py-2 w-16 rounded-r flex justify-center items-center"
-          >👉</a
-        >
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white font-bold p-4 rounded"
+          >
+            Submit
+          </button>
+        </form>
       </div>
-
-      <a
-        href="#"
-        class="bg-indigo-500 text-indigo-100 pl-8 rounded-full flex items-center"
-      >
-        <span class="mr-6">Click This</span>
-        <span
-          class="flex items-center justify-center bg-indigo-700 w-16 h-16 rounded-full"
-          >🤜</span
-        >
-      </a>
     </div>
   </body>
 </html>
